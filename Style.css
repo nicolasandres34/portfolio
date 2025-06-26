@@ -684,14 +684,38 @@ footer p {
         }
 
         /* Responsive */
-        @media (max-width: 768px) {
-            .contact-container {
-                flex-direction: column;
-            }
-            
-            .contact-image {
-                order: -1;
-                margin-bottom: 2rem;
-            }
-        }
+ @media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 2rem; /* opcional: más aire entre bloques en móvil */
+    }
 
+    .contact-item {
+    display: flex;
+    flex-direction: column; /* ícono arriba, texto debajo */
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.8rem;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    }
+
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        background-color: var(--orange);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0.5rem 0;  /* margen debajo del ícono */
+        color: var(--black);
+        font-size: 1.3rem;
+    }
+
+    .contact-image {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+}
