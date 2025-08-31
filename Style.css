@@ -509,6 +509,13 @@ footer p {
         color: var(--white);
         cursor: pointer;
     }
+    .portfolio-grid {
+    grid-template-columns: 1fr; /* 1 columna en móvil */
+    }
+
+    .video-container iframe {
+    height: 350px; /* más bajo en móviles */
+    }
     
 }
 
